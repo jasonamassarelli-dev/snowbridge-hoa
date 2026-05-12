@@ -1,8 +1,9 @@
 :root {
-  --primary: #1e3a5f;
-  --primary-light: #2e5080;
-  --accent: #b5651d;
-  --accent-light: #d4782a;
+  --primary: #1c2d4e;
+  --primary-light: #2d5f8c;
+  --accent: #cf6620;
+  --accent-light: #e07530;
+  --water: #5ab0d0;
   --light: #f4f6f9;
   --white: #ffffff;
   --text: #2d2d2d;
@@ -44,13 +45,20 @@ header {
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   color: var(--white);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 0.03em;
   white-space: nowrap;
 }
-.nav-logo span { color: #d4a96a; }
+.nav-logo img {
+  height: 42px;
+  width: auto;
+}
+.nav-logo span { color: #f0a050; }
 
 nav { display: flex; gap: 0.25rem; }
 
@@ -88,7 +96,7 @@ nav a:hover, nav a.active {
 
 /* ── Hero ────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, #2a5298 100%);
+  background: linear-gradient(160deg, var(--primary) 0%, var(--primary-light) 60%, var(--water) 100%);
   color: var(--white);
   text-align: center;
   padding: 5rem 1.5rem 4rem;
@@ -353,7 +361,7 @@ nav a:hover, nav a.active {
 
 /* ── Footer ──────────────────────────────────────── */
 footer {
-  background: #12253f;
+  background: #111e33;
   color: rgba(255,255,255,0.75);
   padding: 2.5rem 1.5rem 1.5rem;
   font-family: Arial, sans-serif;
@@ -367,7 +375,7 @@ footer {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-footer h4 { color: #d4a96a; margin-bottom: 0.75rem; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
+footer h4 { color: #f0a050; margin-bottom: 0.75rem; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
 footer a { color: rgba(255,255,255,0.75); display: block; margin-bottom: 0.4rem; }
 footer a:hover { color: white; text-decoration: none; }
 .footer-bottom {
